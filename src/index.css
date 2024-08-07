@@ -5,15 +5,29 @@
 
 :root {
   --highlight-link: #6d28d9;
+
+  --main-background-color: #dcdcdd80;
+  --second-background: #ffffff;
+  --main-text: #000000;
+
+  /* Global root */
   --btn-color: #6d28d9;
   --btn-color-hover: #5b21b6;
 }
 .dark {
   --highlight-link: #8b5cf6;
+
+  --main-background-color: #120f16;
+  --second-background: #161518;
+
+  --main-text: #ffffff;
 }
 
 body {
   font-family: "Open Sans", sans-serif;
+
+  color: var(--main-text);
+  background-color: var(--main-background-color);
 }
 @layer components {
   .flex-center {
@@ -23,69 +37,42 @@ body {
     @apply flex items-center justify-between;
   }
   .flex-items-center {
-    @apply flex items-center !important;
+    @apply flex items-center;
   }
   .container-layout {
-    @apply container px-3 mx-auto;
+    @apply w-[95%] max-w-[1080px] px-3 mx-auto;
   }
 }
 
-.button {
-  position: relative;
-  width: 150px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  border: 1px solid #17795e;
-  background-color: #209978;
-  overflow: hidden;
-}
+/*  Switch Theme */
 
-.button,
-.button__icon,
-.button__text {
-  transition: all 0.3s;
-}
-
-.button .button__text {
-  transform: translateX(15px);
-  color: #fff;
-  font-weight: 600;
-}
-
-.button .button__icon {
+.slider {
   position: absolute;
-  transform: translateX(128px);
-  height: 100%;
-  width: 45px;
-  background-color: #17795e;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  inset: 0;
+  background-color: #28096b;
+  transition: 0.5s;
+  border-radius: 30px;
 }
 
-.button .button__icon {
-  width: 20px;
-  fill: #fff;
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 50%;
+  left: 10%;
+  bottom: 15%;
+  box-shadow: inset 8px -4px 0px 0px #fff000;
+  transition: 0.5s;
 }
 
-.button:hover {
-  background: #17795e;
+input:checked + .slider {
+  background-color: #522ba7;
 }
 
-.button:hover .button__text {
-  color: transparent;
+input:checked + .slider:before {
+  transform: translateX(100%);
+  box-shadow: inset 15px -4px 0px 15px #fff000;
 }
 
-.button:hover .button__icon {
-  width: 148px;
-  transform: translateX(0);
-}
-
-.button:active .button__icon {
-  background-color: #146c54;
-}
-
-.button:active {
-  border: 1px solid #146c54;
-}
+/* End Switch Theme */
