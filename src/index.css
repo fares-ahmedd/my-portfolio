@@ -10,6 +10,8 @@
   --second-background: #ffffff;
   --third-background: #dddddd;
   --main-text: #000000;
+  --second-text: #4b5563;
+  --primary-text: #6d28d9;
 
   /* Global root */
   --btn-color: #6d28d9;
@@ -23,6 +25,8 @@
   --third-background: #18141c;
 
   --main-text: #ffffff;
+  --second-text: #d1d5db;
+  --primary-text: #7c3aed;
 }
 
 body {
@@ -45,6 +49,20 @@ body {
     @apply w-[95%] max-w-[1080px] px-3 mx-auto;
   }
 }
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6565656a;
+}
+
+.scroll-hide::-webkit-scrollbar {
+  display: none;
+}
+/* end Scrollbar */
 
 /*  Switch Theme */
 
@@ -78,3 +96,22 @@ input:checked + .slider:before {
 }
 
 /* End Switch Theme */
+
+/* typed cursor text */
+
+.blink {
+  animation: blink 0.8s infinite ease-in-out;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    background: var(--primary-text);
+  }
+  40%,
+  50% {
+    background: transparent;
+  }
+}
+
+/* end typed cursor text */
