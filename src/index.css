@@ -6,8 +6,9 @@
 :root {
   --highlight-link: #6d28d9;
 
-  --main-background-color: #dcdcdd80;
+  --main-background: #dcdcdd80;
   --second-background: #ffffff;
+  --third-background: #dddddd;
   --main-text: #000000;
 
   /* Global root */
@@ -17,8 +18,9 @@
 .dark {
   --highlight-link: #8b5cf6;
 
-  --main-background-color: #120f16;
+  --main-background: #120f16;
   --second-background: #161518;
+  --third-background: #18141c;
 
   --main-text: #ffffff;
 }
@@ -27,7 +29,7 @@ body {
   font-family: "Open Sans", sans-serif;
 
   color: var(--main-text);
-  background-color: var(--main-background-color);
+  background-color: var(--main-background);
 }
 @layer components {
   .flex-center {

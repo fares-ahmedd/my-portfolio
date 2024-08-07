@@ -1,7 +1,7 @@
 import { createPortal } from "react-dom";
 import NavLinks from "./NavLinks";
 import DownloadCvBtn from "../../ui/DownloadCvBtn";
-import ToggleTheme from "../ToggleTheme";
+import ToggleTheme from "./ToggleTheme";
 import Menu from "./Menu";
 function Header() {
   return createPortal(

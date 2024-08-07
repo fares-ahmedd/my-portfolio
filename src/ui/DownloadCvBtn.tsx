@@ -4,7 +4,7 @@ function DownloadCvBtn({ hideMedium = false }: { hideMedium?: boolean }) {
     <a
       className={`relative w-[150px] h-[40px] flex items-center bg-btn-color overflow-hidden rounded-xl transition-all duration-300 hover:bg-btn-color-hover group ${
         hideMedium && "max-md:hidden"
-      }`}
+      } mx-auto`}
       title="Download CV"
       href={"/cv.pdf"}
       download={"Fares Ahmed resume"}
