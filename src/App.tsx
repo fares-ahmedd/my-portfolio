@@ -1,8 +1,12 @@
+import Header from "./components/header/Header";
+
 function App() {
   return (
-    <div>
-      <h2 className="text-center">Hello</h2>
-    </div>
+    <main className="container-layout mt-[74px] h-[600px] border ">
+      <Header />
+
+      <h2>hello</h2>
+    </main>
   );
 }
 
