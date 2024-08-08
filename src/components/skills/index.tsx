@@ -3,12 +3,12 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { mySkills } from "../../lib/skills";
+import { mySkills } from "../../utils/skills";
 
 function Skills() {
   return (
-    <section>
-      <h3 className="title">My Skills</h3>
+    <section className="my-3">
+      <h3 className="title ">My Skills</h3>
       <VerticalTimeline lineColor="var(--primary-text)">
         {mySkills.map((skill) => (
           <VerticalTimelineElement

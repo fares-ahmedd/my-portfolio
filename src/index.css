@@ -49,13 +49,39 @@ body {
     @apply w-[95%] max-w-[1080px] px-3 mx-auto;
   }
   .title {
-    @apply font-bold text-lg md:text-2xl lg:text-3xl text-center mb-3;
+    @apply font-bold text-lg md:text-2xl lg:text-3xl text-center w-fit mx-auto pb-3 mb-3 relative;
   }
 }
 
 .icon-shadow {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+
+/* Title Section  */
+.title::before {
+  content: "";
+  width: 70%;
+  border-radius: 100%;
+  height: 2px;
+  background-color: var(--main-text);
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.title::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: var(--primary-text);
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* End Title Section  */
 
 /* Scrollbar */
 ::-webkit-scrollbar {
