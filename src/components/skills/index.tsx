@@ -4,6 +4,7 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { mySkills } from "../../utils/skills";
+import SecondarySkills from "./SecondarySkills";
 
 function Skills() {
   return (
@@ -31,6 +32,8 @@ function Skills() {
           </VerticalTimelineElement>
         ))}
       </VerticalTimeline>
+
+      <SecondarySkills />
     </section>
   );
 }
