@@ -5,7 +5,7 @@ import ToggleTheme from "./ToggleTheme";
 import Menu from "./Menu";
 function Header() {
   return createPortal(
-    <header className="h-[66px] w-full   mt-2  fixed top-0 left-0  flex-center">
+    <header className="h-[66px] w-full   mt-2  fixed top-0 left-0  flex-center z-[200]">
       <div className="bg-second-background z-50 backdrop-blur-xl flex-between  h-full rounded-xl px-2 container-layout ">
         <h1 className="font-bold text-lg md:text-2xl lg:text-3xl">
           Fares Ahmed

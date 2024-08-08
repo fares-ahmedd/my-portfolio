@@ -48,6 +48,9 @@ body {
   .container-layout {
     @apply w-[95%] max-w-[1080px] px-3 mx-auto;
   }
+  .title {
+    @apply font-bold text-lg md:text-2xl lg:text-3xl text-center mb-3;
+  }
 }
 
 /* Scrollbar */
