@@ -6,6 +6,7 @@ export const projects = [
     liveDemoHref: "https://chatix-steel.vercel.app/",
     imageSrc: "/projects/chatix.png",
     techniques: ["ReactJs", "Firebase", "StyledComponents", "React Router Dom"],
+    category: "React",
   },
   {
     title: "MovieNesting",
@@ -14,6 +15,7 @@ export const projects = [
     liveDemoHref: "https://movie-nesting.netlify.app/",
     imageSrc: "/projects/movieNesting.png",
     techniques: ["ReactJs", "Sass", "Redux Toolkit", "React Router Dom"],
+    category: "React",
   },
   {
     title: "SocialLinx",
@@ -29,6 +31,7 @@ export const projects = [
       "Shadcn Ui",
       "React Router Dom",
     ],
+    category: "React",
   },
   {
     title: "RoomRover",
@@ -37,6 +40,7 @@ export const projects = [
     liveDemoHref: "https://room-rover-bice.vercel.app/",
     imageSrc: "/projects/roomRover.png",
     techniques: ["NextJs", "Tailwind Css", "Clerk", "Stripe", "Supabase"],
+    category: "Next",
   },
   {
     title: "MarketKing",
@@ -52,5 +56,6 @@ export const projects = [
       "Shadcn Ui",
       "Stripe",
     ],
+    category: "Next",
   },
-];
+].reverse();

@@ -14,6 +14,7 @@ function SecondarySkills() {
             href={skill.href}
             target="_blank"
             rel="noreferrer noopener"
+            key={skill.title}
           >
             <span className="text-2xl duration-300 group-hover:animate-bounce group-hover:text-3xl">
               {skill.icon}

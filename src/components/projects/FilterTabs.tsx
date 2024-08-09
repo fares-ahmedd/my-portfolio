@@ -8,7 +8,7 @@ type TabsProps = {
 
 function FilterTabs({ tabs, selected, setSelected }: TabsProps) {
   return (
-    <div className="flex-center bg-main-background p-3 w-fit rounded-lg mx-auto gap-4 ">
+    <div className="flex-center bg-main-background p-3 w-fit rounded-lg mx-auto gap-4 mb-4 ">
       {tabs.map((tab) => (
         <Chip
           text={tab}
