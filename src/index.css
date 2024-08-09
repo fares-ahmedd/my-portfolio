@@ -13,6 +13,9 @@
   --second-text: #4b5563;
   --primary-text: #6d28d9;
 
+  --btn-background: #7c3aed;
+  --btn-background-hover: #6d28d9;
+
   /* Global root */
   --btn-color: #6d28d9;
   --btn-color-hover: #5b21b6;
@@ -50,6 +53,9 @@ body {
   }
   .title {
     @apply font-bold text-lg md:text-2xl lg:text-3xl text-center w-fit mx-auto pb-3 mb-3 relative;
+  }
+  .input {
+    @apply py-2 px-3 rounded-lg w-full bg-third-background border duration-300 focus:border-primary-text focus:ring-1 focus:ring-primary-text focus:outline-none;
   }
 }
 

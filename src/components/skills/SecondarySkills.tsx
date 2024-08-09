@@ -7,7 +7,12 @@ function SecondarySkills() {
       <h4 className="text-center text-second-text font-bold text-xl my-3">
         Secondary Skills
       </h4>
-      <Marquee pauseOnHover>
+      <Marquee
+        pauseOnHover
+        gradient
+        gradientColor="#4d1d997e"
+        gradientWidth={50}
+      >
         {secondarySkills.map((skill) => (
           <a
             className="bg-third-background w-[150px] h-[100px] rounded-xl flex flex-col justify-center items-center duration-300 hover:bg-main-background group border  mx-3 "

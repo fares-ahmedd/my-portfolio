@@ -1,3 +1,4 @@
+import ContactMe from "./components/contact";
 import Header from "./components/header";
 import Home from "./components/home";
 import Projects from "./components/projects";
@@ -13,6 +14,7 @@ function App() {
         <Skills />
 
         <Projects />
+        <ContactMe />
       </main>
       <ProgressScroll />
     </>

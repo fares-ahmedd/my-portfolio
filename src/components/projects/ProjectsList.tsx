@@ -18,7 +18,10 @@ function ProjectsList({ selected }: { selected: string }) {
   }
 
   return (
-    <motion.ul layout className="grid grid-cols-2 md:grid-cols-3 gap-2">
+    <motion.ul
+      layout
+      className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 gap-2"
+    >
       <AnimatePresence>
         {filteredProject.map((project, index) => (
           <motion.li
@@ -52,13 +55,13 @@ function ProjectsList({ selected }: { selected: string }) {
             </div>
 
             <div className="flex items-center justify-end gap-2 my-3  mx-2">
-              <LinkIcon href={project.videoHref}>
+              <LinkIcon href={project.videoHref} title="Watch">
                 <FaVideo />
-              </LinkIcon>{" "}
-              <LinkIcon href={project.githubHref}>
+              </LinkIcon>
+              <LinkIcon href={project.githubHref} title="Github">
                 <FaGithub />
               </LinkIcon>{" "}
-              <LinkIcon href={project.liveDemoHref}>
+              <LinkIcon href={project.liveDemoHref} title="Demo">
                 <FaExternalLinkAlt />
               </LinkIcon>
             </div>
