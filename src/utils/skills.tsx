@@ -5,6 +5,7 @@ import {
   FaHtml5,
   FaJsSquare,
   FaReact,
+  FaSass,
 } from "react-icons/fa";
 import { SiNextdotjs, SiTailwindcss, SiTypescript } from "react-icons/si";
 
@@ -43,6 +44,13 @@ export const mySkills = [
     description:
       "With React.js, I have developed a strong grasp of component-based architecture, state management, and the virtual DOM. I can efficiently create reusable UI components, manage component lifecycles, and handle user interactions. Additionally, I am familiar with popular React.js libraries and tools, such as React Router and Redux, which allow me to build scalable and maintainable web applications with a focus on performance and developer experience",
     color: "#33afd1",
+  },
+  {
+    title: "Sass",
+    icon: <FaSass />,
+    description:
+      "With Sass, I have gained proficiency in writing modular and maintainable CSS. I understand the benefits of using Sass features like variables, mixins, and nested rules to create a more organized and scalable codebase. I can efficiently leverage Sass to build complex and visually appealing user interfaces",
+    color: "#c69",
   },
   {
     title: "Tailwind CSS",

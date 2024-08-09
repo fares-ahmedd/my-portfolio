@@ -1,5 +1,5 @@
 import Lottie from "lottie-react";
-import computer from "../../../public/computer-animation.json";
+import computer from "../../assets/computer-animation.json";
 import { FaHtml5, FaJsSquare } from "react-icons/fa";
 
 function AnimationComputer() {
