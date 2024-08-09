@@ -5,10 +5,20 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import { mySkills } from "../../utils/skills";
 import SecondarySkills from "./SecondarySkills";
-
+import { useInView } from "framer-motion";
+import { useScrollContext } from "../../context/ScrollContext";
+import { useEffect } from "react";
 function Skills() {
+  const { setActiveLink, skillsRef } = useScrollContext();
+  const isInView = useInView(skillsRef, { once: false });
+
+  useEffect(() => {
+    if (isInView) {
+      setActiveLink("Skills");
+    }
+  }, [isInView, setActiveLink]);
   return (
-    <section className="my-3">
+    <section className="my-3" id="Skills" ref={skillsRef}>
       <h3 className="title ">My Skills</h3>
       <VerticalTimeline lineColor="var(--primary-text)">
         {mySkills.map((skill) => (

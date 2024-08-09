@@ -1,6 +1,10 @@
+import { useScrollContext } from "../../context/ScrollContext";
+
 const linksArr = ["Home", "Skills", "Projects", "Contact"];
 
 function NavLinks({ isMenu = false }: { isMenu?: boolean }) {
+  const { activeLink, scrollToSection } = useScrollContext();
+
   return (
     <nav className={`${!isMenu && "max-md:hidden"}`}>
       <ul
@@ -10,12 +14,14 @@ function NavLinks({ isMenu = false }: { isMenu?: boolean }) {
       >
         {linksArr.map((link) => (
           <li key={link}>
-            <a
-              href={`#${link}`}
-              className="duration-300 hover:text-highlight-link font-bold"
+            <button
+              className={`duration-300 hover:text-highlight-link font-bold ${
+                activeLink === link && "text-highlight-link"
+              }`}
+              onClick={() => scrollToSection(link)}
             >
               {link}
-            </a>
+            </button>
           </li>
         ))}
       </ul>

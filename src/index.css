@@ -37,6 +37,7 @@ body {
 
   color: var(--main-text);
   background-color: var(--main-background);
+  scroll-behavior: smooth;
 }
 @layer components {
   .flex-center {
