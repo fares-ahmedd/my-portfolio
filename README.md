@@ -34,17 +34,14 @@
 ## Lighthouse project performance
 
 <div align="center">
-<img alt="Lighthouse Performance" width="950" src="https://github.com/user-attachments/assets/7deb4953-5104-4575-b91a-20ba728962aa"/>
+<img alt="Lighthouse Performance" width="400" src="https://github.com/user-attachments/assets/807824ec-c3cb-4068-8259-eaaec67251e8"/>
 </div>
 
 ## App User Experience 
 (note) If your internet speed is slow, please be patient as the GIF may take some time to download
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/09a7a46a-d62b-4f17-bbe3-6f1b98f347d4"  alt="App user experience">
+  <img src="https://github.com/user-attachments/assets/6418726a-7144-4e19-a708-dba708a2a841"  alt="App user experience">
 </div>
 
----
 
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/8dedaf30-180a-46cc-b1d1-69cd6acc62d0"  alt="App user experience">
-</div>
+
