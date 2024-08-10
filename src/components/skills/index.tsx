@@ -17,10 +17,12 @@ function Skills() {
       setActiveLink("Skills");
     }
   }, [isInView, setActiveLink]);
+  const isNotMobile = window.innerWidth > 430;
+
   return (
     <section className="my-3" id="Skills" ref={skillsRef}>
       <h3 className="title ">My Skills</h3>
-      <VerticalTimeline lineColor="var(--primary-text)">
+      <VerticalTimeline lineColor="var(--primary-text)" animate={isNotMobile}>
         {mySkills.map((skill) => (
           <VerticalTimelineElement
             key={skill.title}
