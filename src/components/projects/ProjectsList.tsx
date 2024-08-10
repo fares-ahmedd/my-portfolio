@@ -61,9 +61,11 @@ function ProjectsList({ selected }: { selected: string }) {
               <LinkIcon href={project.githubHref} title="Github">
                 <FaGithub />
               </LinkIcon>{" "}
-              <LinkIcon href={project.liveDemoHref} title="Demo">
-                <FaExternalLinkAlt />
-              </LinkIcon>
+              {project.liveDemoHref && (
+                <LinkIcon href={project.liveDemoHref} title="Demo">
+                  <FaExternalLinkAlt />
+                </LinkIcon>
+              )}
             </div>
           </motion.li>
         ))}{" "}

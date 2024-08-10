@@ -12,7 +12,7 @@ function LinkIcon({
       href={href}
       target="_blank"
       rel="noreferrer noopener"
-      className="p-3 rounded-lg relative bg-white text-black duration-300 hover:bg-stone-800 hover:text-white group"
+      className="p-3 rounded-full relative bg-white text-black duration-300 hover:bg-stone-800 hover:text-white group "
     >
       {children}
 

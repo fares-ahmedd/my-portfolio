@@ -72,8 +72,8 @@ function Menu() {
             variants={menuVariants}
           >
             <motion.div variants={contentVariants} className="space-y-4">
-              <NavLinks isMenu />
-              <DownloadCvBtn />
+              <NavLinks isMenu onClick={() => setIsOpen(false)} />
+              <DownloadCvBtn onClick={() => setIsOpen(false)} />
             </motion.div>
           </motion.div>
         )}

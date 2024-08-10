@@ -28,17 +28,24 @@ export default function ScrollProvider({
       homeRef.current?.scrollIntoView({
         behavior: "smooth",
         block: "end",
-        inline: "center",
+        inline: "start",
       });
     }
     if (name === "Skills" && skillsRef) {
-      skillsRef.current?.scrollIntoView({ behavior: "smooth" });
+      skillsRef.current?.scrollIntoView({
+        behavior: "smooth",
+        inline: "start",
+      });
     }
     if (name === "Projects" && projectsRef) {
       projectsRef.current?.scrollIntoView({ behavior: "smooth" });
     }
     if (name === "Contact" && contactRef) {
-      contactRef.current?.scrollIntoView({ behavior: "smooth" });
+      contactRef.current?.scrollIntoView({
+        behavior: "smooth",
+        block: "nearest",
+        inline: "start",
+      });
     }
   }
   return (

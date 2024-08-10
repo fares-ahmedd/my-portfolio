@@ -58,4 +58,13 @@ export const projects = [
     ],
     category: "Next",
   },
+
+  {
+    title: "Personal Portfolio",
+    githubHref: "https://github.com/fares-ahmedd/my-portfolio",
+    videoHref: "https://www.youtube.com/watch?v=MselznSgIW4",
+    imageSrc: "/projects/personal-portfolio.png",
+    techniques: ["ReactJs", "Framer Motion", "Tailwind Css"],
+    category: "React",
+  },
 ].reverse();

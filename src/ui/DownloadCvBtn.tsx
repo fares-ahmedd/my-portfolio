@@ -1,5 +1,11 @@
 import { FaFileDownload } from "react-icons/fa";
-function DownloadCvBtn({ hideMedium = false }: { hideMedium?: boolean }) {
+function DownloadCvBtn({
+  hideMedium = false,
+  onClick,
+}: {
+  hideMedium?: boolean;
+  onClick?: () => void;
+}) {
   return (
     <a
       className={`relative w-[150px] h-[40px] flex items-center bg-btn-color overflow-hidden rounded-xl transition-all duration-300 hover:bg-btn-color-hover group ${
@@ -8,6 +14,7 @@ function DownloadCvBtn({ hideMedium = false }: { hideMedium?: boolean }) {
       title="Download CV"
       href={"/cv.pdf"}
       download={"Fares Ahmed resume"}
+      onClick={onClick}
     >
       <span className="transform translate-x-[15px] text-white font-semibold transition-all duration-300 group-hover:translate-x-0">
         Download CV

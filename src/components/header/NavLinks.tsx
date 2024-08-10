@@ -2,7 +2,13 @@ import { useScrollContext } from "../../context/ScrollContext";
 
 const linksArr = ["Home", "Skills", "Projects", "Contact"];
 
-function NavLinks({ isMenu = false }: { isMenu?: boolean }) {
+function NavLinks({
+  isMenu = false,
+  onClick,
+}: {
+  isMenu?: boolean;
+  onClick?: () => void;
+}) {
   const { activeLink, scrollToSection } = useScrollContext();
 
   return (
@@ -13,7 +19,7 @@ function NavLinks({ isMenu = false }: { isMenu?: boolean }) {
         } gap-3 `}
       >
         {linksArr.map((link) => (
-          <li key={link}>
+          <li key={link} onClick={onClick}>
             <button
               className={`duration-300 hover:text-highlight-link font-bold ${
                 activeLink === link && "text-highlight-link"
