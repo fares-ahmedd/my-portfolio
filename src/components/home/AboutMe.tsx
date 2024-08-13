@@ -20,7 +20,7 @@ function AboutMe() {
         <img
           src="/my-img.png"
           alt="Fares Ahmed "
-          className="w-[250px] h-[150px] max-sm:mx-auto "
+          className="w-[250px] h-[150px] max-sm:mx-auto object-cover "
         />
         <PiSealCheckFill className="text-blue-500 text-xl absolute right-[45%] sm:right-0 sm:left-[140px] bottom-2" />
       </div>
