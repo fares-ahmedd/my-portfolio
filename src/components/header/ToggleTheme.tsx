@@ -1,19 +1,24 @@
-import { useEffect, useState } from "react";
+import { useLayoutEffect, useState } from "react";
 
 function ToggleTheme() {
   const [isDark, setIsDark] = useState(false);
 
-  useEffect(() => {
+  function changeToDark() {
+    document.body.classList.add("dark");
+    setIsDark(true);
+  }
+  function changeToLight() {
+    document.body.classList.add("light");
+    setIsDark(false);
+  }
+  useLayoutEffect(() => {
     const selectedTheme = localStorage.getItem("theme");
     if (selectedTheme === "dark") {
-      document.body.classList.add("dark");
-      setIsDark(true);
+      changeToDark();
     } else if (selectedTheme === "light") {
-      document.body.classList.add("light");
-      setIsDark(false);
+      changeToLight();
     } else {
-      document.body.classList.add("dark");
-      setIsDark(false);
+      changeToDark();
     }
   }, [isDark]);
 
