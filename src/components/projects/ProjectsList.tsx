@@ -35,11 +35,14 @@ function ProjectsList({ selected }: { selected: string }) {
             className="border bg-third-background rounded-md duration-300 hover:border-yellow-800 dark:hover:border-yellow-600 flex flex-col justify-between "
             key={project.title}
           >
-            <img
-              src={project.imageSrc}
-              alt={`${project.title} Project`}
-              className="h-[200px] w-full rounded-t-md"
-            />
+            <div className="h-[200px] w-full rounded-t-md">
+              <img
+                src={project.imageSrc}
+                alt={`${project.title} Project`}
+                className="h-full w-full rounded-t-md"
+                loading="lazy"
+              />
+            </div>
 
             <div className="py-3 px-2">
               <h3 className="font-bold text-xl md:text-3xl mb-3">

@@ -44,8 +44,19 @@ function ToggleTheme() {
         className="w-0 h-0 opacity-0"
         checked={isDark}
         onChange={() => console.log("Changed")}
+        aria-label={isDark ? "Switch to light theme" : "Switch to dark theme"}
+        readOnly
       />
-      <span className="slider" onClick={handleClick} role="button"></span>
+      <span
+        className="slider"
+        onClick={handleClick}
+        role="button"
+        aria-label={isDark ? "Switch to light theme" : "Switch to dark theme"}
+      >
+        <span className="sr-only">
+          {isDark ? "Switch to light theme" : "Switch to dark theme"}
+        </span>
+      </span>
     </label>
   );
 }
