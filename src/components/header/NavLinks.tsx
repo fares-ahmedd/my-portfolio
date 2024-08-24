@@ -9,8 +9,12 @@ function NavLinks({
   isMenu?: boolean;
   onClick?: () => void;
 }) {
-  const { activeLink, scrollToSection } = useScrollContext();
+  const { activeLink, scrollToSection, setActiveLink } = useScrollContext();
 
+  const handleClick = (link: string) => {
+    scrollToSection(link);
+    setActiveLink(link);
+  };
   return (
     <nav className={`${!isMenu && "max-md:hidden"}`}>
       <ul
@@ -24,7 +28,7 @@ function NavLinks({
               className={`duration-300 hover:text-highlight-link font-bold ${
                 activeLink === link && "text-highlight-link"
               }`}
-              onClick={() => scrollToSection(link)}
+              onClick={() => handleClick(link)}
             >
               {link}
             </button>

@@ -10,7 +10,10 @@ import { useScrollContext } from "../../context/ScrollContext";
 import { useEffect } from "react";
 function Skills() {
   const { setActiveLink, skillsRef } = useScrollContext();
-  const isInView = useInView(skillsRef, { once: false });
+  const isInView = useInView(skillsRef, {
+    once: false,
+    margin: "0px 0px -500px 0px",
+  });
 
   useEffect(() => {
     if (isInView) {

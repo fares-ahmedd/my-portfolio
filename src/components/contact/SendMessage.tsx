@@ -29,8 +29,6 @@ function SendMessage() {
             setIsLoading(false);
             setIsSuccess(true);
             (e.target as HTMLFormElement).reset();
-
-            console.log("Sent successfully");
           },
           (error) => {
             setIsLoading(false);
@@ -49,7 +47,7 @@ function SendMessage() {
       </h5>
 
       <div className="border p-3 rounded-lg">
-        <p className="text-sm text-second-text">
+        <p className="text-sm text-second-text select-all text">
           If you have any questions or concerns, please don't hesitate to
           contact me. I am open to any work opportunities that align with my
           skills and interests.
@@ -65,7 +63,7 @@ function SendMessage() {
           </label>
           <input
             type="text"
-            className="input"
+            className="input "
             name="user_name"
             id="name"
             autoComplete="off"

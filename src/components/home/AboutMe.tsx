@@ -1,14 +1,15 @@
 import { useState } from "react";
 import TypedText from "./TypedText";
-import { PiSealCheckFill } from "react-icons/pi";
+import MyImg from "./MyImg";
+
+const ABOUT_ME = `I am Fares Ahmed, a front-end web developer specializing in the creation of user-friendly and responsive web applications. My expertise lies in developing intuitive interfaces and ensuring optimal user experiences across various devices. I excel in collaborative environments, contributing to the development of scalable and accessible software solutions that meet both user needs and industry standards`;
 
 function AboutMe() {
   const [expanded, setExpanded] = useState(false);
-  const aboutMe = `I am Fares Ahmed, a front-end web developer specializing in the creation of user-friendly and responsive web applications. My expertise lies in developing intuitive interfaces and ensuring optimal user experiences across various devices. I excel in collaborative environments, contributing to the development of scalable and accessible software solutions that meet both user needs and industry standards`;
 
-  const words = aboutMe.split(" ");
+  const words = ABOUT_ME.split(" ");
   const shortText = words.slice(0, 30).join(" ");
-  const fullText = aboutMe;
+  const fullText = ABOUT_ME;
 
   const toggleExpanded = () => {
     setExpanded(!expanded);
@@ -16,14 +17,7 @@ function AboutMe() {
 
   return (
     <div>
-      <div className="relative">
-        <img
-          src="/my-img.png"
-          alt="Fares Ahmed "
-          className="w-[250px]  max-sm:mx-auto object-cover aspect-video "
-        />
-        <PiSealCheckFill className="text-blue-500 text-xl absolute right-[45%] sm:right-0 sm:left-[140px] bottom-2" />
-      </div>
+      <MyImg />
       <p className="flex-items-center gap-1 font-bold">
         Hey There{" "}
         <img

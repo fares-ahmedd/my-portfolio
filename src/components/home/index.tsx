@@ -3,10 +3,11 @@ import { useScrollContext } from "../../context/ScrollContext";
 import AboutMe from "./AboutMe";
 import AnimationComputer from "./AnimationComputer";
 import { useEffect } from "react";
+import DotsImg from "./DotsImg";
 
 function Home() {
   const { setActiveLink, homeRef } = useScrollContext();
-  const isInView = useInView(homeRef, { once: false });
+  const isInView = useInView(homeRef);
 
   useEffect(() => {
     if (isInView) {
@@ -21,11 +22,7 @@ function Home() {
     >
       <AboutMe />
       <AnimationComputer />
-      <img
-        src="/dots.png"
-        alt="dots"
-        className="absolute bottom-0 right-0 opacity-70 h-[120px] max-md:hidden"
-      />
+      <DotsImg />
     </section>
   );
 }
