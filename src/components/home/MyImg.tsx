@@ -4,7 +4,7 @@ function MyImg() {
   return (
     <div className="relative ">
       <img
-        src="/my-img.png"
+        src="/my-img.webp"
         alt="Fares Ahmed "
         className="w-[250px]  max-sm:mx-auto object-cover aspect-video "
       />

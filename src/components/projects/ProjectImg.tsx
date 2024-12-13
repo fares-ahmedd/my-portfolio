@@ -17,7 +17,7 @@ function ProjectImg({ imageSrc, title }: { imageSrc: string; title: string }) {
     <div
       className={`h-[200px] w-full rounded-t-md `}
       style={{
-        background: `url('${imageSrc.replace(".png", "-sm.png")}')`,
+        background: `url('${imageSrc.replace(".webp", "-sm.webp")}')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
