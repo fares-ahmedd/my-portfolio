@@ -34,7 +34,7 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-
+  overflow-x: hidden;
   color: var(--main-text);
   background-color: var(--main-background);
   scroll-behavior: smooth;

@@ -10,7 +10,7 @@ type ScrollContextTypes = {
   setActiveLink: React.Dispatch<React.SetStateAction<string>>;
 };
 
-const ScrollContext = createContext<ScrollContextTypes | undefined>(undefined);
+const ScrollContext = createContext<ScrollContextTypes | null>(null);
 
 export default function ScrollProvider({
   children,

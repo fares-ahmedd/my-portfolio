@@ -9,8 +9,8 @@ import ProgressScroll from "./ui/scrollProgress";
 function App() {
   return (
     <>
+      <Header />
       <main className="container-layout mt-[82px]  rounded-xl bg-second-background ">
-        <Header />
         <Home />
         <Skills />
 

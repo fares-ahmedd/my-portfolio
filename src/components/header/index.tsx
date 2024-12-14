@@ -1,4 +1,3 @@
-import { createPortal } from "react-dom";
 import NavLinks from "./NavLinks";
 import DownloadCvBtn from "../../ui/DownloadCvBtn";
 import ToggleTheme from "./ToggleTheme";
@@ -8,7 +7,7 @@ function Header() {
   const { activeLink } = useScrollContext();
   const isHome = activeLink === "Home";
 
-  return createPortal(
+  return (
     <header className="h-[66px] w-full   mt-2  fixed top-0 left-0  flex-center z-[200]">
       <div
         className={`z-50 ${
@@ -18,6 +17,7 @@ function Header() {
         <h1 className="font-bold text-lg md:text-2xl lg:text-3xl">
           Fares Ahmed
         </h1>
+
         <NavLinks />
 
         <div className="flex-center gap-3">
@@ -26,8 +26,7 @@ function Header() {
           <Menu />
         </div>
       </div>
-    </header>,
-    document.getElementById("root")!
+    </header>
   );
 }
 

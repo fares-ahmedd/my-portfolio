@@ -88,7 +88,7 @@ function SendMessage() {
           </label>
           <textarea
             rows={5}
-            className="input"
+            className="input resize-none"
             id="message"
             required
             minLength={10}

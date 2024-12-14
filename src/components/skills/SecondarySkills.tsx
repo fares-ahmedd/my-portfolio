@@ -24,9 +24,9 @@ function SecondarySkills() {
             <span className="text-2xl duration-300 group-hover:animate-bounce group-hover:text-3xl">
               {skill.icon}
             </span>
-            <span className="mt-2 mx-1 text-sm" title={skill.title}>
+            <strong className="mt-2 mx-1 text-sm" title={skill.title}>
               {skill.title}
-            </span>
+            </strong>
           </a>
         ))}
       </Marquee>

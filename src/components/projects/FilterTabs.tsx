@@ -1,18 +1,17 @@
 import { motion } from "framer-motion";
-
+import { TABS } from "./index";
 type TabsProps = {
-  tabs: string[];
   selected: string;
   setSelected: React.Dispatch<React.SetStateAction<string>>;
 };
 
-function FilterTabs({ tabs, selected, setSelected }: TabsProps) {
+function FilterTabs({ selected, setSelected }: TabsProps) {
   return (
     <div className="flex-center bg-main-background p-3 w-fit rounded-lg mx-auto gap-4 mb-4 ">
-      {tabs.map((tab) => (
+      {TABS.map((tab) => (
         <Chip
           text={tab}
-          selected={selected === tab}
+          active={selected === tab}
           setSelected={setSelected}
           key={tab}
         />
@@ -25,22 +24,22 @@ export default FilterTabs;
 
 const Chip = ({
   text,
-  selected,
+  active,
   setSelected,
 }: {
   text: string;
-  selected: boolean;
+  active: boolean;
   setSelected: React.Dispatch<React.SetStateAction<string>>;
 }) => {
   return (
     <button
       onClick={() => setSelected(text)}
       className={`${
-        selected ? "text-white" : " hover:text-slate-200 hover:bg-slate-700"
+        active ? "text-white" : " hover:text-slate-200 hover:bg-slate-700"
       } text-sm transition-colors px-2.5 py-0.5 rounded-md relative`}
     >
       <span className="relative z-10">{text}</span>
-      {selected && (
+      {active && (
         <motion.span
           layoutId="pill-tab"
           transition={{ type: "spring", duration: 0.5 }}
