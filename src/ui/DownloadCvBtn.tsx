@@ -12,7 +12,7 @@ function DownloadCvBtn({
         hideMedium && "max-md:hidden"
       } mx-auto`}
       title="Download CV"
-      href={"/cv.pdf"}
+      href={"/Fares Ahmed Resume.pdf"}
       download={"Fares Ahmed resume"}
       onClick={onClick}
     >
