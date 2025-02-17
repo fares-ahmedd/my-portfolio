@@ -32,6 +32,11 @@
   --primary-text: #7c3aed;
 }
 
+*,
+::before,
+::after {
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
 body {
   font-family: "Open Sans", sans-serif;
   overflow-x: hidden;

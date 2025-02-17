@@ -14,7 +14,7 @@ function ContactMe() {
     }
   }, [isInView, setActiveLink]);
   return (
-    <section className="my-3" id="Contact" ref={contactRef}>
+    <section className="py-3" id="Contact" ref={contactRef}>
       <h3 className="title">Contact Me</h3>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">

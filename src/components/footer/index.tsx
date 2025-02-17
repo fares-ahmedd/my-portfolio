@@ -1,12 +1,11 @@
 import { FaFacebook, FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
-import LinkIcon from "../../ui/LinkIcon";
+import LinkIcon from "../ui/LinkIcon";
 import { BiLogoGmail } from "react-icons/bi";
 
 function Footer() {
   return (
     <footer className="container-layout p-3 flex-between  gap-3 bg-main-background max-sm:flex-col">
       <small>
-        {" "}
         &copy; {new Date().getFullYear()} Fares Ahmed All Rights reserved
       </small>
       <div className="flex-items-center gap-2">

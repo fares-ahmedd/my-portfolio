@@ -11,6 +11,7 @@ function ToggleTheme() {
     document.body.classList.add("light");
     setIsDark(false);
   }
+
   useLayoutEffect(() => {
     const selectedTheme = localStorage.getItem("theme");
     if (selectedTheme === "dark") {
@@ -43,7 +44,6 @@ function ToggleTheme() {
         type="checkbox"
         className="w-0 h-0 opacity-0"
         checked={isDark}
-        onChange={() => console.log("Changed")}
         aria-label={isDark ? "Switch to light theme" : "Switch to dark theme"}
         readOnly
       />

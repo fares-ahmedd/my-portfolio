@@ -11,7 +11,7 @@ function Projects() {
   const [selected, setSelected] = useState(TABS[0]);
 
   const { setActiveLink, projectsRef } = useScrollContext();
-  const isInView = useInView(projectsRef, { once: false });
+  const isInView = useInView(projectsRef, { amount: 0.5 });
 
   useEffect(() => {
     if (isInView) {
@@ -19,7 +19,7 @@ function Projects() {
     }
   }, [isInView, setActiveLink]);
   return (
-    <section className="my-3" id="Projects" ref={projectsRef}>
+    <section className="py-8" id="Projects" ref={projectsRef}>
       <h3 className="title">My Projects</h3>
 
       <FilterTabs selected={selected} setSelected={setSelected} />

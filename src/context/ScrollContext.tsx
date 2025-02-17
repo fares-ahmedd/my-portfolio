@@ -18,6 +18,7 @@ export default function ScrollProvider({
   children: React.ReactNode;
 }) {
   const [activeLink, setActiveLink] = useState("Home");
+
   const homeRef = useRef<HTMLDivElement>(null);
   const skillsRef = useRef<HTMLDivElement>(null);
   const projectsRef = useRef<HTMLDivElement>(null);

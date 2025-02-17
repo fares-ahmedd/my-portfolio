@@ -7,7 +7,7 @@ import DotsImg from "./DotsImg";
 
 function Home() {
   const { setActiveLink, homeRef } = useScrollContext();
-  const isInView = useInView(homeRef);
+  const isInView = useInView(homeRef, { amount: 0.9 });
 
   useEffect(() => {
     if (isInView) {

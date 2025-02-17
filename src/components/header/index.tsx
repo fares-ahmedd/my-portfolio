@@ -1,5 +1,5 @@
 import NavLinks from "./NavLinks";
-import DownloadCvBtn from "../../ui/DownloadCvBtn";
+import DownloadCvBtn from "../ui/DownloadCvBtn";
 import ToggleTheme from "./ToggleTheme";
 import Menu from "./Menu";
 import { useScrollContext } from "../../context/ScrollContext";

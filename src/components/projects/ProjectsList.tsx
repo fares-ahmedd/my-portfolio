@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 
-import LinkIcon from "../../ui/LinkIcon";
+import LinkIcon from "../ui/LinkIcon";
 import { projects } from "../../utils/projects";
 import { FaGithub, FaExternalLinkAlt, FaVideo } from "react-icons/fa";
 import ProjectImg from "./ProjectImg";

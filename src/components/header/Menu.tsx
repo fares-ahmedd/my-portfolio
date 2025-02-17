@@ -2,7 +2,7 @@ import { FaBars } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 import { motion, AnimatePresence } from "framer-motion";
 import NavLinks from "./NavLinks";
-import DownloadCvBtn from "../../ui/DownloadCvBtn";
+import DownloadCvBtn from "../ui/DownloadCvBtn";
 import { useState } from "react";
 const menuVariants = {
   closed: {
